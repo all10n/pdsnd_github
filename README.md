@@ -1,15 +1,19 @@
 ### Date created
-Include the date you created this project and README file.
+This project and Readme file was created on 12/8/2018
 
 ### Project Title
-Replace the Project Title
+Explore US Bikeshare Data
 
 ### Description
-Describe what your project is about and what it does
+Use Python to explore data related to bike share systems for three major cities in the United States—Chicago, New York City, and Washington. Script will allow user to filter for dataset to analyze and calculate statistics.
 
 ### Files used
-Include the files used
+bikeshare.py
+chicago.csv
+new_york_city.csv
+washington.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+https://github.com/udacity/pdsnd_github.git
+https://github.com/udacity/course-collaboration-travel-plans.git
+https://github.com/all10n/my-travel-plans.git
