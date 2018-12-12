@@ -166,14 +166,14 @@ def user_stats(df):
 
 def expand(df):
     start = 0
-    end = 5
+    end = 10
     data = input('Would you like to see the raw data? ').lower()
 
     while data == 'yes':
         print(df.iloc[start:end])
-        data = input('Would you like to see five more rows of raw data? ').lower()
+        data = input('Would you like to see 10 more rows of raw data? ').lower()
         start = end
-        end += 5
+        end += 10
 
 def main():
     while True:
