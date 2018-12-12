@@ -116,13 +116,13 @@ def trip_duration_stats(df):
     start_time = time.time()
 
     # TO DO: display total travel time
-    total_travel_time = (df['Trip Duration'].sum())
-    print('Total Travel Time: {} seconds'.format(total_travel_time))
+    total_travel_time = (df['Trip Duration'].sum()/60)
+    print('Total Travel Time: {} minutes'.format(total_travel_time))
 
 
     # TO DO: display mean travel time
-    mean_travel_time = df['Trip Duration'].mean()
-    print('Average Travel Time: {} seconds'.format(mean_travel_time))
+    mean_travel_time = df['Trip Duration'].mean()/60
+    print('Average Travel Time: {} minutes'.format(mean_travel_time))
 
 
 
@@ -166,14 +166,14 @@ def user_stats(df):
 
 def expand(df):
     start = 0
-    end = 5
+    end = 10
     data = input('Would you like to see the raw data? ').lower()
 
     while data == 'yes':
         print(df.iloc[start:end])
-        data = input('Would you like to see five more rows of raw data? ').lower()
+        data = input('Would you like to see 10 more rows of raw data? ').lower()
         start = end
-        end += 5
+        end += 10
 
 def main():
     while True:
@@ -185,6 +185,8 @@ def main():
             print('\nYour input for either city or month is incorrect.')
             try_again = input('Would you like to try again? Enter yes or no.\n')
             if try_again.lower() != 'yes':
+                print('-'*40)
+                print('Thank you for using our script. Have a great day!')
                 break
             else:
                 main()
@@ -195,6 +197,8 @@ def main():
             print('Your input for day is incorrect.')
             try_again = input('Would you like to try again? Enter yes or no.\n')
             if try_again.lower() != 'yes':
+                print('-'*40)
+                print('Thank you for using our script. Have a great day!')
                 break
             else:
                 main()
@@ -206,6 +210,7 @@ def main():
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
             print('-'*40)
+            print('Thank you for using our script. Have a great day!')
 
             break
 
