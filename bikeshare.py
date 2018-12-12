@@ -185,6 +185,8 @@ def main():
             print('\nYour input for either city or month is incorrect.')
             try_again = input('Would you like to try again? Enter yes or no.\n')
             if try_again.lower() != 'yes':
+                print('-'*40)
+                print('Thank you for using our script. Have a great day!')
                 break
             else:
                 main()
@@ -195,6 +197,8 @@ def main():
             print('Your input for day is incorrect.')
             try_again = input('Would you like to try again? Enter yes or no.\n')
             if try_again.lower() != 'yes':
+                print('-'*40)
+                print('Thank you for using our script. Have a great day!')
                 break
             else:
                 main()
@@ -206,6 +210,7 @@ def main():
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
             print('-'*40)
+            print('Thank you for using our script. Have a great day!')
 
             break
 
